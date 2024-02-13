@@ -11,8 +11,7 @@ factBtn.addEventListener("click", () => {
     const factType = factSelect.value || "trivia";
 
     if (Number.isFinite(parseInt(number))) {
-        const numberFact = parseInt(number);
-        fetchFact(numberFact, factType);
+        fetchFact(number, factType);
     } else if(number === "random"){
         fetchFact(number, factType);
     } else {
